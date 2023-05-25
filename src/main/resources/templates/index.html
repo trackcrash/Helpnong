@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head th:replace="Fragments/common :: head('헬농')">
+<head th:replace="~{Fragments/common :: head('헬농')}">
 </head>
-<body>
+<body class="background-lightgreen">
     <!-- 헤더 -->
-    <header id="header" class="wrap--header flexbox flexbox-c flexbox-jsc" th:replace="Fragments/common :: header"></header>
+    <header id="header" class="wrap--header flexbox flexbox-c flexbox-jsc" th:replace="~{Fragments/common :: header}"></header>
     <!-- 메인섹션 -->
-    <div class="wrap background-lightgreen">
+    <div class="wrap">
         <!-- 홍보문구 + 구독하기 영역 -->
-        <div class="section align--cc">
+        <!-- <div class="section align--cc">
             <span class="section--title font-bold font-xl background-white">title</span>
             <button class="btn btn--lg btn--subscript font-lg font-bold" value="normal"  onclick="pay()">btn </button>
-        </div>
+        </div> -->
 
         <!-- 구독간단홍보 섹션 -->
         <div class="section flexbox flexbox-c">
             <h1 class="font-xxl section--title font-darkgreen">subscript</h1>
             <div class="flexbox flexbox-r-jsb subscript--box">
-                <div class="item--subscript flexbox flexbox-c flexbox-ac card--border">
+                <div class="item--subscript flexbox flexbox-c flexbox-ac card--border background-green">
                     <div class="subscript--txt__box flexbox flexbox-ac flexbox-c">
                         <h2 class="font-xxl font-darkgreen">Main&nbsp;Title</h2>
                         <div class="subscript--txt align--cc font-lg font-white background-darkgreen">sometext</div>
@@ -29,7 +29,7 @@
                         <button class="btn btn--lg btn--subscript font-lg font-bold" value="subscript1" onclick="pay()">subscript</button>
                     </div>
                 </div>
-                <div class="item--subscript flexbox flexbox-c flexbox-ac card--border">
+                <div class="item--subscript flexbox flexbox-c flexbox-ac card--border background-green">
                     <div class="subscript--txt__box flexbox flexbox-ac flexbox-c">
                         <h2 class="font-xxl font-darkgreen">Main&nbsp;Title</h2>
                         <div class="subscript--txt align--cc font-lg font-white background-darkgreen">sometext</div>
@@ -41,7 +41,7 @@
                         <button class="btn btn--lg btn--subscript font-lg font-bold" value="subscript2" onclick="pay()">subscript</button>
                     </div>
                 </div>
-                <div class="item--subscript flexbox flexbox-c flexbox-ac card--border">
+                <div class="item--subscript flexbox flexbox-c flexbox-ac card--border background-green">
                     <div class="subscript--txt__box flexbox flexbox-ac flexbox-c">
                         <h2 class="font-xxl font-darkgreen">Main&nbsp;Title</h2>
                         <div class="subscript--txt align--cc font-lg font-white background-darkgreen">sometext</div>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <!-- 슬라이드 섹션 -->
         <div class="section flexbox flexbox-r card--border">
@@ -150,7 +150,7 @@
                     <div class="advantage--txt font-darkgreen">text2</div>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- 어필+구독버튼 섹션 -->
@@ -173,12 +173,12 @@
                     <span class="btn--medium btn--plus material-symbols-outlined align--cc font-xxl font-bold">add_box</span>
                 </div>
                 <div class="answer--box background-green">
-                    
+
                 </div>
             </div>
         </div>
     </div>
     <!-- 푸터 -->
-    <footer id="footer" class="wrap--foot flexbox flexbox-c background-darkgreen" th:replace="Fragments/common :: footer"></footer>
+    <footer th:replace="~{Fragments/common :: footer}"></footer>
 </body>
 </html>  

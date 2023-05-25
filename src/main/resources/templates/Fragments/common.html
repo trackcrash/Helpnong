@@ -14,7 +14,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-    <section th:fragment="header">
+    <section id="header" class="wrap--header flexbox flexbox-c flexbox-jsc" th:fragment="header">
         <div class="advertise--txt font-xl">advertisement</div>
         <!-- 네비부분 -->
         <nav class="navi--header flexbox flexbox-r-jsb flexbox-ae">
@@ -34,14 +34,14 @@
             </ul>
             <!-- 로그인버튼 -->
             <div class="box--login flexbox flexbox-r flexbox-ac">
-                <span class="user_name font-bold" >name</span>
+                <span class="user_name font-bold">name</span>
                 <span class="align--cc material-symbols-outlined background-darkgreen font-lightgreen">Person</span>
                 <a href="#" class="btn btn--login font-darkgreen font-bold">login</a>
                 <a href="#" class="btn btn--login font-darkgreen font-bold">regist</a>
             </div>
         </nav>
     </section>
-    <section th:fragment="footer">
+    <section id="footer" class="wrap--foot flexbox flexbox-c background-darkgreen" th:fragment="footer">
         <!-- 푸터 소셜미디어 박스 -->
         <div class="sns--box flexbox flexbox-r flexbox-jsc flexbox-ac">
             <a href="#" class="btn--medium">
@@ -54,8 +54,6 @@
                 <img src="/img/sns/twitter.svg" alt="twitter" class="sns--img">
             </a>
         </div>
-
-
         <div class="section--foot flexbox flexbox-c flexbox-jsc">
             <!-- 푸터 서브메뉴 영역 -->
             <div class="foot__sub--box flexbox flexbox-r flexbox-jsc">

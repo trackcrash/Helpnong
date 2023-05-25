@@ -40,8 +40,9 @@
 /* 푸터 메인영역 (약관)css */
 .foot__main--box{
     width: 100%;
-    max-width: 1500px;
+    max-width: 1450px;
     gap: 10px;
+    margin: 0 auto;
 }
 .foot__main--img{
     width: 100%;
@@ -58,6 +59,7 @@
     gap: 10px;
 }
 .foot__main--content > .content{
+    max-width: fit-content;
     gap: 5px;
 }
 .content--txt{
